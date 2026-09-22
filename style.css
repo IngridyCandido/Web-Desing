@@ -1,29 +1,108 @@
-a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 4px;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
-ul {
-    list-style-type: none;
-    padding: 0;
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f3e9dc;
+    font-family: Arial, sans-serif;
+}
+
+h1, p, h2{
+    font-family: "Oswald", sans-serif;
+}
+.porta-retrato-jose {
+    width: 380px;
+    padding: 20px;
+
+    background-color: #32da48;
+    border: 10px solid #199e2b;
+    border-radius: 8px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
     text-align: center;
 }
-h1 {
-    color: #333;
-    font-size: 2em;
-    text-align: center;
-    font-family: 'Playwrite BE WAL Guides', cursive;
+p{
+    text-align: justify;
 }
-p {
-    color: #666;
-    font-size: 1em;
+h1, h2 {
     text-align: center;
-    font-family: 'Oswald', sans-serif;
 }
+.porta-retrato-elen {
+    width: 380px;
+    padding: 20px;
+
+    background-color: #653c8b;
+    border: 10px solid #5a245c;
+    border-radius: 8px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+.porta-retrato-nicole {
+    width: 380px;
+    padding: 20px;
+
+    background-color: #e43dac;
+    border: 10px solid #ce20b1;
+    border-radius: 8px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+.porta-retrato-paulo {
+    width: 380px;
+    padding: 20px;
+
+    background-color: #2d84be;
+    border: 10px solid #2a57d3;
+    border-radius: 8px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+.foto {
+    background-color: white;
+    padding: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.foto img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+    display: block;
+}
+
+.legenda {
+    color: white;
+    padding: 15px 5px 5px;
+}
+
+.legenda h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.legenda p {
+    font-size: 14px;
+}
+
 .footer {
     background-color: #f0f0f0;
     text-align: center;
@@ -31,21 +110,4 @@ p {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
-
-}
-form {
-    text-align: center;
-    margin-top: 20px;
-    color: #333;
 }
