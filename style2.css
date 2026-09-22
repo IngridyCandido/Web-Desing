@@ -116,6 +116,27 @@ p {
     margin-bottom: 0;
 }
 
+#botao-jose, #botao-elen, #botao-nicole, #botao-paulo {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #333333;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 2px solid #333333;
+    transition: 0.3s;
+}
+
+#botao-jose:hover, #botao-elen:hover, #botao-nicole:hover, #botao-paulo:hover {
+    background-color: #333333;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 .acessar {
     display: flex;
     justify-content: center;
