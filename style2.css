@@ -1,113 +1,206 @@
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+* {
+    box-sizing: border-box;
 }
 
 body {
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    margin: 0;
     background-color: #f3e9dc;
     font-family: Arial, sans-serif;
 }
 
-h1, p, h2{
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, p {
     font-family: "Oswald", sans-serif;
 }
-.porta-retrato-jose {
-    width: 380px;
-    padding: 20px;
 
-    background-color: #32da48;
-    border: 10px solid #199e2b;
-    border-radius: 8px;
-
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-
-    text-align: center;
-}
-p{
-    text-align: justify;
-}
 h1, h2 {
     text-align: center;
+    color: #3C4656;
 }
-.porta-retrato-elen {
-    width: 380px;
-    padding: 20px;
 
+p {
+    text-align: justify;
+    color: #4A5568;
+}
+
+.introducao {
+    margin-bottom: 40px;
+}
+
+.galeria {
+    margin-top: 30px;
+}
+
+.galeria > h2 {
+    margin-bottom: 10px;
+}
+
+.galeria > p {
+    margin-bottom: 30px;
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.porta-retrato-jose, .porta-retrato-elen, .porta-retrato-nicole, .porta-retrato-paulo {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.porta-retrato-jose {
+    background-color: #32da48;
+    border: 10px solid #199e2b;
+}
+
+.porta-retrato-elen {
     background-color: #653c8b;
     border: 10px solid #5a245c;
-    border-radius: 8px;
-
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-
-    text-align: center;
 }
 
 .porta-retrato-nicole {
-    width: 380px;
-    padding: 20px;
-
     background-color: #e43dac;
     border: 10px solid #ce20b1;
-    border-radius: 8px;
-
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-
-    text-align: center;
 }
 
 .porta-retrato-paulo {
-    width: 380px;
-    padding: 20px;
-
     background-color: #2d84be;
     border: 10px solid #2a57d3;
-    border-radius: 8px;
+}
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-
-    text-align: center;
+.porta-retrato-jose:hover, .porta-retrato-elen:hover, .porta-retrato-nicole:hover, .porta-retrato-paulo:hover {
+    transform: translateY(-8px);
+    box-shadow:0 15px 30px rgba(0, 0, 0, 0.35);
 }
 
 .foto {
     background-color: white;
     padding: 10px;
-
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .foto img {
     width: 100%;
     height: 280px;
-
     object-fit: cover;
     display: block;
 }
 
 .legenda {
     color: white;
+
     padding: 15px 5px 5px;
 }
 
 .legenda h1 {
     font-size: 24px;
+    margin-top: 0;
     margin-bottom: 8px;
 }
 
 .legenda p {
     font-size: 14px;
+    margin-bottom: 0;
+}
+
+.acessar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.acessar a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.acessar a:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .footer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px;
     background-color: #f0f0f0;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+.footer p {
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+
+    .fotos {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .porta-retrato-jose, .porta-retrato-elen, .porta-retrato-nicole, .porta-retrato-paulo {
+        padding: 15px;
+        border-width: 7px;
+    }
+
+    .foto img {
+        height: 250px;
+    }
+
+    .acessar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .acessar a {
+        width: 80%;
+        max-width: 300px;
+        text-align: center;
+        margin: 5px;
+    }
+
 }
